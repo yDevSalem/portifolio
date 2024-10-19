@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/log_in.css">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css'>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="container">
+            <h1>Entrar usando seu E-mail</h1>
+            <form onsubmit="login(event)">
+                <label for="email">E-mail</label>
+                <div class="input-customizado">
+                    <input type="email" placeholder="Seu E-mail" id="emailInput" autocomplete="off">
+                    <i class='bx bx-at'></i>
+                </div>
+                
+                <label for="password">Senha </label>
+                <div class="input-customizado">
+                    <input type="password" placeholder="Sua senha" id="senhaInput">
+                    <i class='bx bx-lock-alt'></i>
+                </div>
+                <div id="alerta"></div>
+                    <button class="btn" type="submit">Entrar</button>
+            </form>
+
+            <div class="links">
+                <a href="#">Esqueceu sua senha?</a>
+                <a href="sing-in_up.html">Criar uma conta</a>
+            </div>
+
+            <div class="divisao">
+                <div class="linha"></div>
+                <h3>Ou</h3>
+                <div class="linha"></div>
+            </div>
+
+            <div class="social-login">
+                <button class="google">
+                    <i class='bx bxl-google'></i>
+                    <span>Entrar com Google</span>
+                </button>
+                <button class="facebook">
+                    <i class='bx bxl-facebook'></i>
+                    <span>Entrar com Facebook</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/login_in.js"></script>
+    <script src="../js/head.js"></script>
+    </div>
+</body>
+
+</html>
